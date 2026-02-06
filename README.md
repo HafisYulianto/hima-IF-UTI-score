@@ -1,5 +1,17 @@
 # HIMA-IF UTI Score System 🏆
 
+## 📸 Tampilan Aplikasi
+<table>
+  <tr>
+    <td><b>Halaman Beranda</b></td>
+    <td><b>Dashboard Admin</b></td>
+  </tr>
+  <tr>
+    <td><img src="img/beranda.png" width="400"></td>
+    <td><img src="img/dashboard.png" width="400"></td>
+  </tr>
+</table>
+
 Sistem manajemen penilaian kinerja dan klasemen skor keaktifan anggota **HIMA Informatika Universitas Teknokrat Indonesia**. Aplikasi ini dirancang untuk mendigitalisasi proses penilaian kinerja organisasi agar lebih transparan, objektif, dan real-time.
 
 ## 📊 Logika Penilaian (Bucket System)
