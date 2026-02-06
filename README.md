@@ -3,12 +3,14 @@
 ## 📸 Tampilan Aplikasi
 <table>
   <tr>
-    <td><b>Halaman Beranda</b></td>
-    <td><b>Dashboard Admin</b></td>
+    <td align="center"><b>Halaman Beranda</b></td>
+    <td align="center"><b>Dashboard Admin</b></td>
+    <td align="center"><b>Klasemen Anggota</b></td>
   </tr>
   <tr>
-    <td><img src="img/beranda.png" width="400"></td>
-    <td><img src="img/dashboard.png" width="400"></td>
+    <td><img src="img/beranda.png" width="300"></td>
+    <td><img src="img/dashboard.png" width="300"></td>
+    <td><img src="img/klasemen.png" width="300"></td>
   </tr>
 </table>
 
