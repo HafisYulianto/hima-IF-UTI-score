@@ -1,59 +1,29 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# HIMA-IF UTI Score System 🏆
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem manajemen penilaian kinerja dan klasemen skor keaktifan anggota **HIMA Informatika Universitas Teknokrat Indonesia**. Aplikasi ini dirancang untuk mendigitalisasi proses penilaian kinerja organisasi agar lebih transparan, objektif, dan real-time.
 
-## About Laravel
+## 📊 Logika Penilaian (Bucket System)
+Sistem ini menggunakan perhitungan rata-rata terpisah per kategori sebelum dikalkulasi menjadi skor akhir anggota:
+* **Rapat**: Mengambil rata-rata nilai dari kategori 'Rapat' dengan bobot **20%**.
+* **Progja Divisi**: Mengambil rata-rata nilai dari kategori 'Progja Divisi' dengan bobot **45%**.
+* **Kepanitiaan**: Mengambil rata-rata nilai dari kategori 'Kepanitiaan' dengan bobot **35%**.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Fitur Utama
+* **Dashboard Admin**: Manajemen data anggota (Tambah, Edit, Hapus) dengan fitur filter dinamis per angkatan dan divisi.
+* **Popup Konfirmasi**: Integrasi SweetAlert2 pada fitur hapus, edit, dan simpan nilai untuk meminimalisir kesalahan input data.
+* **Sistem Akumulasi & Rata-rata**: Kalkulasi otomatis skor akhir berdasarkan bobot kategori kegiatan yang telah ditentukan.
+* **Waktu Real-time Indonesia**: Konfigurasi sistem menggunakan `Asia/Jakarta` sehingga waktu penginputan riwayat sesuai dengan Waktu Indonesia Barat (WIB).
+* **Klasemen Publik**: Halaman tampilan skor yang dapat diakses oleh seluruh anggota untuk melihat peringkat secara transparan.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠️ Struktur Folder Views (Admin)
+* `dashboard.blade.php`: Pusat kendali data anggota dan aksi hapus.
+* `create.blade.php`: Formulir pendaftaran anggota baru ke dalam sistem.
+* `edit.blade.php`: Pembaruan profil data diri anggota (Nama, Divisi, Angkatan).
+* `penilaian.blade.php`: Halaman input poin kinerja berdasarkan kategori dan catatan khusus.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 💻 Spesifikasi Teknis
+* **Framework**: Laravel 11/12.
+* **Bahasa Pemrograman**: PHP 8.2+.
+* **Timezone**: Asia/Jakarta (WIB).
+* **Database**: MySQL.
+* **UI Framework**: Tailwind CSS.
